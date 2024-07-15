@@ -33,12 +33,14 @@ main{
     padding: 0.5em;
     gap: 2em;
     margin-top: auto;
-    margin-bottom: auto;
-
+    margin-bottom: auto;    
 }
 
 .nav-list>li{
     display: block;
+    background-color: rgb(94, 149, 197);
+    padding: 5px;
+    border-radius: 10%;
 }
 
 h1{
@@ -67,9 +69,14 @@ h1{
     block-size: auto;
 }
 
+@layer 
+{
+
+}
+
 .main-spaciality
 {
-    box-shadow: lightblue 60px -16px ;
+    background-color: aqua 60px -16px;
 }
 
 .img-div{
