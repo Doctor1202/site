@@ -1,11 +1,11 @@
 :root{
     display: block;
     font-size: larger;
-    
+    width: 100%;
 }
 
 body{
-    background: linear-gradient(20deg,rgba(245, 107, 107, 0.767), #eccb71b0);
+    background: linear-gradient(20deg,rgb(160, 198, 255), rgba(255, 255, 255, 0.748));
     background-attachment: fixed;
     margin: auto;
     display: block;
@@ -13,12 +13,19 @@ body{
 
 main{
     margin: 40px;
+    margin-top: 65px;
+
 }
 
 .nav-pannel
 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    z-index: 9999;
     display: block;
-    background-color: pink;
+    background: linear-gradient(20deg,rgb(160, 198, 255), rgba(255, 255, 255, 0.748));
     margin-top: 0;
     padding: 0.3em;
 }
@@ -34,13 +41,29 @@ main{
     gap: 2em;
     margin-top: auto;
     margin-bottom: auto;    
+
 }
 
 .nav-list>li{
     display: block;
-    background-color: rgb(94, 149, 197);
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 0.5em;
+    transition-duration: 0,5s;
+    cursor: pointer;
+    background-color: rgba(94, 149, 197 , 0%);
+    transition-duration: 0.3s;
+    text-decoration: none;
+    
+}
+
+.nav-list>li:hover
+{
+    
+    background-color: rgba(94, 149, 197 , 50%) ;
+}
+
+.nav-list>a{
+    text-decoration: none;
 }
 
 h1{
@@ -59,35 +82,46 @@ h1{
     justify-content: center;
     box-sizing: border-box;
     gap: 1.5em;
+    padding: 1em;
+    margin: 1em;
 }
 
 .main-spaciality{
     display: flex;
-    justify-content: left;
-    box-sizing: border-box;
+    justify-content: center;
+    box-sizing: content-box;
     gap: 1.5em;
     block-size: auto;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    width: 100%;
+    background-color: yellow;
+    
 }
 
-@layer{
-    .box1{
-        width: 100px;
-        height: 100px;
-        background-color: aqua;
-    }
+.main-spaciality-text>h3
+{
+    margin-top: 0em;
+}
+
+.main-info
+{
+    display: block;
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+}
+
+.main-contact
+{
+    margin: 1em;
+    padding: 1em;
 }
  
-.main-spaciality
-{
-    background-color: yellow;
-    display: flex;
-    border-radius: 50%;
-    background-position: left;
-    background-size: 50%;
-}
     
 .img-div{
-    width: 300px;
+    width: 20em;
 }
 
 .img2{
