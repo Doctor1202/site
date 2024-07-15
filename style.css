@@ -69,16 +69,28 @@ h1{
     block-size: auto;
 }
 
-@layer 
-{
-
+@layer{
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    }
 }
+ 
+.main-spaciality
+{
+    border-radius: 50%;
+    background-position: left;
+    background-size: 10%;
+}
+
+
 
 .main-spaciality
 {
-    background-color: aqua 60px -16px;
+    background-color: yellow;
 }
-
+    
 .img-div{
     width: 300px;
 }
