@@ -7,14 +7,9 @@
 body{
     background: linear-gradient(20deg,rgb(160, 198, 255), rgba(255, 255, 255, 0.748));
     background-attachment: fixed;
-    margin: auto;
+    margin: 1em;
+    padding: 1em;
     display: block;
-}
-
-main{
-    margin: 40px;
-    margin-top: 65px;
-
 }
 
 .nav-pannel
@@ -58,7 +53,6 @@ main{
 
 .nav-list>li:hover
 {
-    
     background-color: rgba(94, 149, 197 , 50%) ;
 }
 
@@ -69,7 +63,11 @@ main{
 h1{
     text-align: center;
 }
-
+.main-intro {
+    margin: 1em;
+    margin-bottom: 0;
+    padding: 1em;
+}
 .main-title{
     display: block;
     text-align: center;
@@ -100,9 +98,14 @@ h1{
     
 }
 
-.main-spaciality-text>h3
+.main-spaciality>div {
+    padding: 1em;
+    margin: 1em;
+}
+
+h3
 {
-    margin-top: 0em;
+    margin-top: 0;
 }
 
 .main-info
@@ -122,9 +125,23 @@ h1{
     
 .img-div{
     width: 20em;
+
 }
 
 .img2{
     max-width: 100%;
+}
+
+
+@media screen and (max-width:600px){
+    .nav-pannel{ 
+        font-size: 10px;
+    }
+
+    main, .main-layout>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
