@@ -67,10 +67,6 @@ body {
     background-color: rgba(94, 149, 197, 50%);
 }
 
-.nav-list>a {
-    text-decoration: none;
-}
-
 h1 {
     text-align: center;
 }
@@ -79,6 +75,21 @@ h1 {
     margin: 1em;
     margin-bottom: 0;
     padding: 1em;
+
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: slide1;
+}
+
+@keyframes slide1 {
+    from {
+        translate: 0% -50%;
+        color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        color: rgb(0, 0, 0);
+    }
 }
 
 .main-title {
