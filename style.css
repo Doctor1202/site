@@ -67,19 +67,17 @@ body {
     background-color: rgba(94, 149, 197, 50%);
 }
 
-h1 {
-    text-align: center;
-}
-
 .main-intro {
     margin: 1em;
     margin-bottom: 0;
     padding: 1em;
 
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: 1;
     animation-name: slide1;
     animation-play-state: calc(50%);
+
+    text-align: center;
 }
 
 @keyframes slide1 {
@@ -93,11 +91,6 @@ h1 {
     }
 }
 
-.main-title {
-    display: block;
-    text-align: center;
-}
-
 .main-layout {
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +99,8 @@ h1 {
     gap: 1.5em;
     padding: 1em;
     margin: 1em;
+
+    text-align: justify;
 }
 
 .main-spaciality {
