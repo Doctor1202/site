@@ -79,6 +79,7 @@ h1 {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-name: slide1;
+    animation-play-state: calc(50%);
 }
 
 @keyframes slide1 {
@@ -157,6 +158,7 @@ h3 {
 .img2 {
     max-width: 100%;
 }
+
 
 
 @media screen and (max-width:600px) {
