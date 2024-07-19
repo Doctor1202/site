@@ -107,23 +107,19 @@ body {
     display: flex;
     justify-content: center;
     box-sizing: content-box;
-    gap: 1.5em;
+    gap: 0em;
     block-size: auto;
     border-radius: 1em;
     padding: 1em;
     margin: 1em;
-    width: 85%;
+    width: min(1400px, 85%);
     background-color: yellow;
 
 }
 
 .box2{
-    padding: calc(0em);
-}
-
-.main-spaciality>div {
-    padding: 1em;
-    margin: 1em;
+    padding: 0em;
+    margin: 0em;
 }
 
 h3 {
@@ -150,12 +146,13 @@ h3 {
 }
 
 .img-div {
-    width: 20em;
+    width: 100%;
 
 }
 
 .img2 {
-    max-width: 100%;
+    max-width: min(1400px, 100%);
+    margin: 0em;
 }
 
 
@@ -173,20 +170,26 @@ h3 {
 
     .main-layout{
         width: 100%;
-        justify-content: center;
-        gap: 0px;
-    }
-
-
-
-    main,
-    .main-layout>div {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+        box-sizing: border-box;
     }
 
     .main-spaciality{
+        display: flex;
+        flex-wrap: wrap;
         margin: calc(0em);
+        box-sizing: content-box;
     }
+
+    .main-contact, .main-spaciality-text, .img-div, .main-info{
+        width: fit-content;
+        margin: 1em;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
 }
