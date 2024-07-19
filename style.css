@@ -161,6 +161,10 @@ h3 {
         margin-right: 1em;
     }
 
+    .box2{
+        width: 100%;
+    }
+
      
     .img-div{
         width: 100%;
@@ -173,7 +177,7 @@ h3 {
         margin: 0px;
         padding: 0px;
         gap: 0px;
-        box-sizing: border-box;
+        box-sizing: content-box;
     }
 
     .main-spaciality{
